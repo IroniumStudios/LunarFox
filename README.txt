@@ -1,5 +1,5 @@
 
-# LunarFox
+## LunarFox
 
 This project aims to make a private web browser that is customizable to
 the fullest extent of the user, it aims to have a very well thought out
