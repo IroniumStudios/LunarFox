@@ -1,0 +1,53 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto min-content min-content;
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 50px;
+  padding: var(--space-small);
+  padding-inline-end: 0;
+  border-inline-end: 1px solid var(--chrome-content-separator-color);
+  background-color: var(--toolbar-bgcolor);
+  color: var(--toolbar-color);
+  :host([positionend]) & {
+    border-inline-start: 1px solid var(--chrome-content-separator-color);
+    border-inline-end: none;
+  }
+
+  /* stylelint-disable-next-line media-query-no-invalid */
+  @media (-moz-bool-pref: "sidebar.verticalTabs") {
+    :host([expanded]) & {
+      min-width: 280px;
+    }
+  }
+}
+
+.actions-list {
+  display: flex;
+  flex-direction: column;
+  padding-inline-end: var(--space-small);
+  align-items: center;
+}
+
+.expanded-button {
+  width: 100%;
+
+  &::part(button) {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight);
+    justify-content: flex-start;
+    padding-inline-start: 8px;
+  }
+}
+
+.tools-and-extensions {
+  align-self: start;
+}
+
+.bottom-actions {
+  align-self: end;
+}
