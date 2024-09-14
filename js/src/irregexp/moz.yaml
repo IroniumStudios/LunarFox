@@ -1,0 +1,36 @@
+schema: 1
+
+bugzilla:
+  product: Core
+  component: "JavaScript Engine"
+
+origin:
+  name: irregexp
+  description: A fast regular expression engine from V8
+  url: https://v8.dev
+
+  release: b5e87501d67b9de425657253b20d0f5772f0d2c7 (Fri Aug 09 12:55:10 2024).
+  revision: b5e87501d67b9de425657253b20d0f5772f0d2c7
+
+  license: BSD-3-Clause
+  license-file: LICENSE.v8
+
+vendoring:
+  url: https://chromium.googlesource.com/v8/v8.git
+  source-hosting: googlesource
+  vendor-directory: js/src/irregexp/
+  skip-vendoring-steps: ['fetch', 'move-contents']
+
+  update-actions:
+    - action: run-script
+      script: 'import-irregexp.py'
+      cwd: '{yaml_dir}'
+
+updatebot:
+  maintainer-phab: iain
+  maintainer-bz: iireland@mozilla.com
+  try-preset: sm-shell
+  tasks:
+    - type: vendoring
+      enabled: True
+      frequency: 1 week
