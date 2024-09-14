@@ -1,0 +1,18 @@
+[DEFAULT]
+prefs = ["browser.ml.modelHubRootUrl='chrome://mochitests/content/browser/toolkit/components/ml/tests/browser/data'"]
+support-files = [
+  "head.js",
+  "data/**/*.*"
+]
+
+["browser_ml_cache.js"]
+lineno = "7"
+
+["browser_ml_engine.js"]
+skip-if = ["os == 'linux'"]    # see bug 1911083
+lineno = "10"
+
+["browser_ml_engine_process.js"]
+
+["browser_ml_utils.js"]
+lineno = "13"
