@@ -1,0 +1,2 @@
+[1726337591.2318287, "run", {"error": "Binary expected at D:/LunarFox-source/LunarFox/obj-x86_64-pc-windows-msvc\\dist\\bin\\firefox.exe does not exist."}]
+[1726337591.2318287, "run", {"help": "It looks like your program isn't built. You can run |./mach build| to build it."}]
