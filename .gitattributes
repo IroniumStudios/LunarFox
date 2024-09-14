@@ -1,0 +1,12 @@
+# Prevent line ending normalization to follow the mercurial behavior
+* -text
+/.hg/store/00changelog.d filter=lfs diff=lfs merge=lfs -text
+/.hg/store/00changelog.i filter=lfs diff=lfs merge=lfs -text
+/.hg/store/00manifest.d filter=lfs diff=lfs merge=lfs -text
+/.hg/store/00manifest.i filter=lfs diff=lfs merge=lfs -text
+/.hg/store/data/mobile/android/focus-android/app/libs/geckoview-latest.aar.d filter=lfs diff=lfs merge=lfs -text
+/.hg/store/data/security/manager/ssl/ns_s_t_s_preload_list.inc.d filter=lfs diff=lfs merge=lfs -text
+/.hg/store/data/services/settings/dumps/blocklists/addons.json.d filter=lfs diff=lfs merge=lfs -text
+/.hg/store/data/services/settings/dumps/security-state/intermediates.json.d filter=lfs diff=lfs merge=lfs -text
+/.hg/store/fncache filter=lfs diff=lfs merge=lfs -text
+/.hg/store/undo.backup.fncache.bck filter=lfs diff=lfs merge=lfs -text
