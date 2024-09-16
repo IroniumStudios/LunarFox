@@ -15,13 +15,13 @@ If you found a bug, please file it at https://damonicproducts.wixsite.com/smithc
 
 + downloading python is an important factor, which you can get [`here`](https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe).
 
-## 2. To start the build process run the following command.
+ ## 2. To start the build process run the following command.
 
 ```bash
 ./mach build
 ```
 
-## 3. to Start the project run the following command.
+ ## 3. to Start the project run the following command.
 
 ```bash
 python3 runconfig.py
