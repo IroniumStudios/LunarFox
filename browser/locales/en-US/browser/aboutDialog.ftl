@@ -5,8 +5,6 @@
 aboutDialog-title =
     .title = About LunarFox
 
-releaseNotes-link = What’s new
-
 update-checkForUpdatesButton =
     .label = Check for updates
     .accesskey = C
@@ -54,21 +52,6 @@ update-internal-error2 = Unable to check for updates due to internal error. Upda
 #   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
 aboutdialog-channel-description = You are currently on the <label data-l10n-name="current-channel">{ $channel }</label> update channel.
 
-warningDesc-version = LunarFox is experimental and may be unstable.
-
-aboutdialog-help-user = LunarFox Help
-aboutdialog-submit-feedback = Submit Feedback
-
-community-exp = <label data-l10n-name="community-exp-mozillaLink">LunarFox</label> is a <label data-l10n-name="community-exp-creditsLink">global community</label> working together to keep the Web open, public and accessible to all.
-
-community-2 = LunarFox is designed by <label data-l10n-name="community-mozillaLink">LunarFox</label>, a <label data-l10n-name="community-creditsLink">global community</label> working together to keep the Web open, public and accessible to all.
-
-helpus = Want to help? <label data-l10n-name="helpus-donateLink">Make a donation</label> or <label data-l10n-name="helpus-getInvolvedLink">get involved!</label>
-
-bottomLinks-license = Licensing Information
-bottomLinks-rights = End-User Rights
-bottomLinks-privacy = Privacy Policy
-
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
 #   $version (String): version of Firefox, e.g. 66.0.1
@@ -77,7 +60,7 @@ aboutDialog-version = { $version } ({ $bits }-bit)
 
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:
-#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $version (String): version of LunarFox for Nightly builds, e.g. 66.0a1
 #   $isodate (String): date in ISO format, e.g. 2019-01-16
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-bit)

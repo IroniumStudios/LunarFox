@@ -8,8 +8,8 @@
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
 #
-# default - "Mozilla Firefox"
-# private - "Mozilla Firefox (Private Browsing)"
+# default - "LunarFox Browser"
+# private - "LunarFox Browser (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -26,8 +26,8 @@ browser-main-window-window-titles =
 # opened has no title:
 #
 #
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox — (Private Browsing)"
+# "default" - "LunarFox Browser"
+# "private" - "LunarFox Browser — (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.

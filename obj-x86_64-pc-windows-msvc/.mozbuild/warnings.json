@@ -1,18 +1,5 @@
 {
   "files": {
-    "C:\\Users\\Damon\\.mozbuild\\vs\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\unknwn.idl": {
-      "hash": "5c3e88f2200839c3ab6dcfd76656c8e0f0870a83",
-      "warnings": [
-        {
-          "filename": "C:\\Users\\Damon\\.mozbuild\\vs\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\unknwn.idl",
-          "line": 28,
-          "column": 10,
-          "message": "non-portable path to file '\"Unknwnbase.Idl\"'; specified path differs in case from file name on disk",
-          "flag": "-Wnonportable-include-path",
-          "type": "warning"
-        }
-      ]
-    },
     "C:\\Users\\Damon\\.mozbuild\\vs\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\objidl.idl": {
       "hash": "67bd74721254fee018a2b608fda6b2fec382dd8d",
       "warnings": [
@@ -21,6 +8,19 @@
           "line": 67,
           "column": 10,
           "message": "non-portable path to file '\"objidlbase.Idl\"'; specified path differs in case from file name on disk",
+          "flag": "-Wnonportable-include-path",
+          "type": "warning"
+        }
+      ]
+    },
+    "C:\\Users\\Damon\\.mozbuild\\vs\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\unknwn.idl": {
+      "hash": "5c3e88f2200839c3ab6dcfd76656c8e0f0870a83",
+      "warnings": [
+        {
+          "filename": "C:\\Users\\Damon\\.mozbuild\\vs\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\unknwn.idl",
+          "line": 28,
+          "column": 10,
+          "message": "non-portable path to file '\"Unknwnbase.Idl\"'; specified path differs in case from file name on disk",
           "flag": "-Wnonportable-include-path",
           "type": "warning"
         }
@@ -71,8 +71,80 @@
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
           "line": 136,
+          "column": 60,
+          "message": "passing 'PRUint32 *' (aka 'unsigned int *') to parameter of type 'int *' converts between pointers to integer types with different sign",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 770,
+          "column": 17,
+          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
+          "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 445,
+          "column": 37,
+          "message": "passing 'const void *' to parameter of type 'PVOID' (aka 'void *') discards qualifiers",
+          "flag": "-Wincompatible-pointer-types-discards-qualifiers",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 687,
+          "column": 17,
+          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
+          "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 136,
           "column": 67,
           "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'int'",
+          "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 407,
+          "column": 13,
+          "message": "unused variable 'bytesSent'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 769,
+          "column": 17,
+          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
+          "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 376,
+          "column": 19,
+          "message": "incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'LPDWORD' (aka 'unsigned long *')",
+          "flag": "-Wincompatible-pointer-types",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 605,
+          "column": 76,
+          "message": "passing 'PRUint32 *' (aka 'unsigned int *') to parameter of type 'int *' converts between pointers to integer types with different sign",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
+          "line": 688,
+          "column": 17,
+          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
           "flag": "-Wsign-compare",
           "type": "warning"
         },
@@ -94,82 +166,10 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 376,
-          "column": 19,
-          "message": "incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'LPDWORD' (aka 'unsigned long *')",
-          "flag": "-Wincompatible-pointer-types",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 605,
-          "column": 76,
-          "message": "passing 'PRUint32 *' (aka 'unsigned int *') to parameter of type 'int *' converts between pointers to integer types with different sign",
-          "flag": "-Wpointer-sign",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 769,
-          "column": 17,
-          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
-          "flag": "-Wsign-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 407,
-          "column": 13,
-          "message": "unused variable 'bytesSent'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 445,
-          "column": 37,
-          "message": "passing 'const void *' to parameter of type 'PVOID' (aka 'void *') discards qualifiers",
-          "flag": "-Wincompatible-pointer-types-discards-qualifiers",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
           "line": 119,
           "column": 52,
           "message": "incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'u_long *' (aka 'unsigned long *')",
           "flag": "-Wincompatible-pointer-types",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 136,
-          "column": 60,
-          "message": "passing 'PRUint32 *' (aka 'unsigned int *') to parameter of type 'int *' converts between pointers to integer types with different sign",
-          "flag": "-Wpointer-sign",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 770,
-          "column": 17,
-          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
-          "flag": "-Wsign-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 687,
-          "column": 17,
-          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
-          "flag": "-Wsign-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95sock.c",
-          "line": 688,
-          "column": 17,
-          "message": "comparison of integers of different signs: 'SOCKET' (aka 'unsigned long long') and 'PROsfd' (aka 'long long')",
-          "flag": "-Wsign-compare",
           "type": "warning"
         }
       ]
@@ -213,7 +213,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\pripv6.c",
-          "line": 135,
+          "line": 175,
           "column": 14,
           "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -221,7 +221,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\pripv6.c",
-          "line": 175,
+          "line": 135,
           "column": 14,
           "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -234,7 +234,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prlayer.c",
-          "line": 182,
+          "line": 303,
           "column": 14,
           "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -242,7 +242,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prlayer.c",
-          "line": 303,
+          "line": 182,
           "column": 14,
           "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -276,22 +276,6 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prsocket.c",
-          "line": 357,
-          "column": 64,
-          "message": "incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'LPDWORD' (aka 'unsigned long *')",
-          "flag": "-Wincompatible-pointer-types",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prsocket.c",
-          "line": 1505,
-          "column": 56,
-          "message": "argument 'f' of type 'PRFileDesc *[]' (aka 'struct PRFileDesc *[]') with mismatched bound",
-          "flag": "-Warray-parameter",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prsocket.c",
           "line": 325,
           "column": 72,
           "message": "incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'LPDWORD' (aka 'unsigned long *')",
@@ -312,6 +296,22 @@
           "column": 27,
           "message": "comparison of integers of different signs: 'PRInt32' (aka 'int') and 'unsigned int'",
           "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prsocket.c",
+          "line": 357,
+          "column": 64,
+          "message": "incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'LPDWORD' (aka 'unsigned long *')",
+          "flag": "-Wincompatible-pointer-types",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\io\\prsocket.c",
+          "line": 1505,
+          "column": 56,
+          "message": "argument 'f' of type 'PRFileDesc *[]' (aka 'struct PRFileDesc *[]') with mismatched bound",
+          "flag": "-Warray-parameter",
           "type": "warning"
         }
       ]
@@ -347,7 +347,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 705,
+          "line": 719,
           "column": 15,
           "message": "assigning to 'char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
           "flag": "-Wpointer-sign",
@@ -355,25 +355,9 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 678,
-          "column": 1,
-          "message": "unused function 'IsRootDirectory'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 705,
-          "column": 25,
-          "message": "passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
-          "flag": "-Wpointer-sign",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
           "line": 655,
-          "column": 20,
-          "message": "passing 'const char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
+          "column": 10,
+          "message": "assigning to 'const char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
           "flag": "-Wpointer-sign",
           "type": "warning"
         },
@@ -381,14 +365,6 @@
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
           "line": 442,
           "column": 22,
-          "message": "passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
-          "flag": "-Wpointer-sign",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 719,
-          "column": 25,
           "message": "passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
           "flag": "-Wpointer-sign",
           "type": "warning"
@@ -403,34 +379,10 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 655,
-          "column": 10,
-          "message": "assigning to 'const char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
-          "flag": "-Wpointer-sign",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
           "line": 275,
           "column": 19,
           "message": "incompatible pointer types passing 'PRUint32 *' (aka 'unsigned int *') to parameter of type 'LPDWORD' (aka 'unsigned long *')",
           "flag": "-Wincompatible-pointer-types",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 719,
-          "column": 15,
-          "message": "assigning to 'char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
-          "flag": "-Wpointer-sign",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
-          "line": 442,
-          "column": 12,
-          "message": "assigning to 'char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
-          "flag": "-Wpointer-sign",
           "type": "warning"
         },
         {
@@ -443,9 +395,57 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
+          "line": 719,
+          "column": 25,
+          "message": "passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
+          "line": 655,
+          "column": 20,
+          "message": "passing 'const char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
+          "line": 705,
+          "column": 25,
+          "message": "passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
+          "line": 678,
+          "column": 1,
+          "message": "unused function 'IsRootDirectory'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
           "line": 655,
           "column": 25,
           "message": "passing 'const char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
+          "line": 705,
+          "column": 15,
+          "message": "assigning to 'char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
+          "flag": "-Wpointer-sign",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95io.c",
+          "line": 442,
+          "column": 12,
+          "message": "assigning to 'char *' from 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not",
           "flag": "-Wpointer-sign",
           "type": "warning"
         }
@@ -456,9 +456,9 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95thred.c",
-          "line": 362,
-          "column": 15,
-          "message": "variable 'previousSuspendCount' set but not used",
+          "line": 270,
+          "column": 10,
+          "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
           "type": "warning"
         },
@@ -472,15 +472,15 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95thred.c",
-          "line": 270,
-          "column": 10,
-          "message": "variable 'rv' set but not used",
+          "line": 349,
+          "column": 15,
+          "message": "variable 'previousSuspendCount' set but not used",
           "flag": "-Wunused-but-set-variable",
           "type": "warning"
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\md\\windows\\w95thred.c",
-          "line": 349,
+          "line": 362,
           "column": 15,
           "message": "variable 'previousSuspendCount' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -493,32 +493,8 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 2756,
-          "column": 58,
-          "message": "comparison of integers of different signs: 'unsigned long long' and 'int'",
-          "flag": "-Wsign-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 2033,
-          "column": 15,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3013,
-          "column": 34,
-          "message": "operator '<<' has lower precedence than '-'; '-' will be evaluated first",
-          "flag": "-Wshift-op-parentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3252,
-          "column": 47,
+          "line": 3520,
+          "column": 21,
           "message": "'&&' within '||'",
           "flag": "-Wlogical-op-parentheses",
           "type": "warning"
@@ -533,7 +509,103 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 2033,
+          "column": 15,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3014,
+          "column": 26,
+          "message": "operator '<<' has lower precedence than '-'; '-' will be evaluated first",
+          "flag": "-Wshift-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 1035,
+          "column": 17,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3129,
+          "column": 17,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 1968,
+          "column": 15,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 1272,
+          "column": 30,
+          "message": "operator '<<' has lower precedence than '+'; '+' will be evaluated first",
+          "flag": "-Wshift-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 1270,
+          "column": 33,
+          "message": "operator '>>' has lower precedence than '-'; '-' will be evaluated first",
+          "flag": "-Wshift-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3252,
+          "column": 47,
+          "message": "'&&' within '||'",
+          "flag": "-Wlogical-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3436,
+          "column": 13,
+          "message": "'&&' within '||'",
+          "flag": "-Wlogical-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 949,
+          "column": 11,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 2057,
+          "column": 53,
+          "message": "operator '<<' has lower precedence than '-'; '-' will be evaluated first",
+          "flag": "-Wshift-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
           "line": 883,
+          "column": 15,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 897,
           "column": 15,
           "message": "using the result of an assignment as a condition without parentheses",
           "flag": "-Wparentheses",
@@ -549,42 +621,10 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 564,
-          "column": 56,
-          "message": "comparison of integers of different signs: 'long long' and 'unsigned long long'",
-          "flag": "-Wsign-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 2968,
-          "column": 11,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 949,
-          "column": 11,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3129,
-          "column": 17,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3436,
-          "column": 13,
-          "message": "'&&' within '||'",
-          "flag": "-Wlogical-op-parentheses",
+          "line": 1272,
+          "column": 47,
+          "message": "operator '>>' has lower precedence than '-'; '-' will be evaluated first",
+          "flag": "-Wshift-op-parentheses",
           "type": "warning"
         },
         {
@@ -597,50 +637,10 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 1035,
-          "column": 17,
+          "line": 2968,
+          "column": 11,
           "message": "using the result of an assignment as a condition without parentheses",
           "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 1270,
-          "column": 33,
-          "message": "operator '>>' has lower precedence than '-'; '-' will be evaluated first",
-          "flag": "-Wshift-op-parentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3520,
-          "column": 21,
-          "message": "'&&' within '||'",
-          "flag": "-Wlogical-op-parentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 1272,
-          "column": 47,
-          "message": "operator '>>' has lower precedence than '-'; '-' will be evaluated first",
-          "flag": "-Wshift-op-parentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3014,
-          "column": 26,
-          "message": "operator '<<' has lower precedence than '-'; '-' will be evaluated first",
-          "flag": "-Wshift-op-parentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 1272,
-          "column": 30,
-          "message": "operator '<<' has lower precedence than '+'; '+' will be evaluated first",
-          "flag": "-Wshift-op-parentheses",
           "type": "warning"
         },
         {
@@ -653,6 +653,46 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 564,
+          "column": 56,
+          "message": "comparison of integers of different signs: 'long long' and 'unsigned long long'",
+          "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3340,
+          "column": 7,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3299,
+          "column": 15,
+          "message": "using the result of an assignment as a condition without parentheses",
+          "flag": "-Wparentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3013,
+          "column": 34,
+          "message": "operator '<<' has lower precedence than '-'; '-' will be evaluated first",
+          "flag": "-Wshift-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
+          "line": 3455,
+          "column": 40,
+          "message": "'&&' within '||'",
+          "flag": "-Wlogical-op-parentheses",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
           "line": 1279,
           "column": 31,
           "message": "operator '>>' has lower precedence than '-'; '-' will be evaluated first",
@@ -661,8 +701,8 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3299,
-          "column": 15,
+          "line": 1360,
+          "column": 11,
           "message": "using the result of an assignment as a condition without parentheses",
           "flag": "-Wparentheses",
           "type": "warning"
@@ -677,18 +717,10 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3340,
-          "column": 7,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 3455,
-          "column": 40,
-          "message": "'&&' within '||'",
-          "flag": "-Wlogical-op-parentheses",
+          "line": 2756,
+          "column": 58,
+          "message": "comparison of integers of different signs: 'unsigned long long' and 'int'",
+          "flag": "-Wsign-compare",
           "type": "warning"
         },
         {
@@ -698,38 +730,6 @@
           "message": "operator '>>' has lower precedence than '-'; '-' will be evaluated first",
           "flag": "-Wshift-op-parentheses",
           "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 2057,
-          "column": 53,
-          "message": "operator '<<' has lower precedence than '-'; '-' will be evaluated first",
-          "flag": "-Wshift-op-parentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 1360,
-          "column": 11,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 1968,
-          "column": 15,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prdtoa.c",
-          "line": 897,
-          "column": 15,
-          "message": "using the result of an assignment as a condition without parentheses",
-          "flag": "-Wparentheses",
-          "type": "warning"
         }
       ]
     },
@@ -738,18 +738,18 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prnetdb.c",
-          "line": 444,
-          "column": 19,
-          "message": "cast to smaller integer type 'long' from 'char *'",
-          "flag": "-Wpointer-to-int-cast",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prnetdb.c",
           "line": 2003,
           "column": 19,
           "message": "comparison of integers of different signs: 'int' and 'unsigned long long'",
           "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prnetdb.c",
+          "line": 444,
+          "column": 19,
+          "message": "cast to smaller integer type 'long' from 'char *'",
+          "flag": "-Wpointer-to-int-cast",
           "type": "warning"
         }
       ]
@@ -759,7 +759,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prtpool.c",
-          "line": 1123,
+          "line": 997,
           "column": 14,
           "message": "variable 'rval_status' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -775,7 +775,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\misc\\prtpool.c",
-          "line": 997,
+          "line": 1123,
           "column": 14,
           "message": "variable 'rval_status' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -788,9 +788,41 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
+          "line": 163,
+          "column": 14,
+          "message": "unused variable 'rv'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
           "line": 569,
           "column": 12,
           "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
+          "line": 568,
+          "column": 14,
+          "message": "unused variable 'q'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
+          "line": 105,
+          "column": 22,
+          "message": "variable 'pri' set but not used",
+          "flag": "-Wunused-but-set-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
+          "line": 422,
+          "column": 21,
+          "message": "unused variable 'pri'",
           "flag": "-Wunused-variable",
           "type": "warning"
         },
@@ -809,92 +841,12 @@
           "message": "unused variable 'is'",
           "flag": "-Wunused-variable",
           "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
-          "line": 163,
-          "column": 14,
-          "message": "unused variable 'rv'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
-          "line": 422,
-          "column": 21,
-          "message": "unused variable 'pri'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
-          "line": 105,
-          "column": 22,
-          "message": "variable 'pri' set but not used",
-          "flag": "-Wunused-but-set-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prucv.c",
-          "line": 568,
-          "column": 14,
-          "message": "unused variable 'q'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
         }
       ]
     },
     "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c": {
       "hash": "96251a03f11b06c8a63c2915f753a4714d166df3",
       "warnings": [
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 318,
-          "column": 22,
-          "message": "unused variable 'pri'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 318,
-          "column": 27,
-          "message": "unused variable 'boost'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 207,
-          "column": 12,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 317,
-          "column": 14,
-          "message": "unused variable 'q'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 319,
-          "column": 12,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 81,
-          "column": 31,
-          "message": "expression result unused",
-          "flag": "-Wunused-value",
-          "type": "warning"
-        },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
           "line": 30,
@@ -905,17 +857,9 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 404,
+          "line": 207,
           "column": 12,
-          "message": "unused variable 'rv'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
-          "line": 392,
-          "column": 15,
-          "message": "unused variable 'me'",
+          "message": "unused variable 'is'",
           "flag": "-Wunused-variable",
           "type": "warning"
         },
@@ -929,9 +873,41 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 317,
+          "column": 14,
+          "message": "unused variable 'q'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
           "line": 208,
           "column": 15,
           "message": "unused variable 't'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 319,
+          "column": 12,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 392,
+          "column": 15,
+          "message": "unused variable 'me'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 318,
+          "column": 22,
+          "message": "unused variable 'pri'",
           "flag": "-Wunused-variable",
           "type": "warning"
         },
@@ -942,6 +918,30 @@
           "message": "unused variable 'q'",
           "flag": "-Wunused-variable",
           "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 404,
+          "column": 12,
+          "message": "unused variable 'rv'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 81,
+          "column": 31,
+          "message": "expression result unused",
+          "flag": "-Wunused-value",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\prulock.c",
+          "line": 318,
+          "column": 27,
+          "message": "unused variable 'boost'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
         }
       ]
     },
@@ -950,9 +950,57 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 624,
+          "line": 463,
           "column": 12,
           "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 1435,
+          "column": 16,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 460,
+          "column": 13,
+          "message": "unused function '_PR_UserRunThread'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 625,
+          "column": 15,
+          "message": "unused variable 'me'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 546,
+          "column": 21,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 558,
+          "column": 12,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 683,
+          "column": 15,
+          "message": "unused variable 'me'",
           "flag": "-Wunused-variable",
           "type": "warning"
         },
@@ -974,10 +1022,18 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 460,
-          "column": 13,
-          "message": "unused function '_PR_UserRunThread'",
-          "flag": "-Wunused-function",
+          "line": 624,
+          "column": 12,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
+          "line": 548,
+          "column": 35,
+          "message": "expression result unused",
+          "flag": "-Wunused-value",
           "type": "warning"
         },
         {
@@ -990,39 +1046,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 1435,
-          "column": 16,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
           "line": 1542,
-          "column": 12,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 546,
-          "column": 21,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 683,
-          "column": 15,
-          "message": "unused variable 'me'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 558,
           "column": 12,
           "message": "unused variable 'is'",
           "flag": "-Wunused-variable",
@@ -1038,34 +1062,10 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 548,
-          "column": 35,
-          "message": "expression result unused",
-          "flag": "-Wunused-value",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
           "line": 1094,
           "column": 12,
           "message": "variable 'useRecycled' set but not used",
           "flag": "-Wunused-but-set-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 463,
-          "column": 12,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\combined\\pruthr.c",
-          "line": 625,
-          "column": 15,
-          "message": "unused variable 'me'",
-          "flag": "-Wunused-variable",
           "type": "warning"
         }
       ]
@@ -1075,8 +1075,16 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prcthr.c",
-          "line": 266,
+          "line": 250,
           "column": 12,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prcthr.c",
+          "line": 76,
+          "column": 16,
           "message": "unused variable 'is'",
           "flag": "-Wunused-variable",
           "type": "warning"
@@ -1099,16 +1107,8 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prcthr.c",
-          "line": 250,
+          "line": 266,
           "column": 12,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prcthr.c",
-          "line": 76,
-          "column": 16,
           "message": "unused variable 'is'",
           "flag": "-Wunused-variable",
           "type": "warning"
@@ -1120,18 +1120,18 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prdump.c",
-          "line": 106,
-          "column": 12,
-          "message": "unused variable 'is'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prdump.c",
           "line": 90,
           "column": 19,
           "message": "comparison of integers of different signs: 'PRIntn' (aka 'int') and 'unsigned long long'",
           "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prdump.c",
+          "line": 106,
+          "column": 12,
+          "message": "unused variable 'is'",
+          "flag": "-Wunused-variable",
           "type": "warning"
         }
       ]
@@ -1149,7 +1149,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prmon.c",
-          "line": 168,
+          "line": 237,
           "column": 14,
           "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -1165,7 +1165,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\nsprpub\\pr\\src\\threads\\prmon.c",
-          "line": 237,
+          "line": 168,
           "column": 14,
           "message": "variable 'rv' set but not used",
           "flag": "-Wunused-but-set-variable",
@@ -1186,10 +1186,18 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 51355,
-          "column": 18,
+          "line": 51560,
+          "column": 5,
           "message": "code will never be executed",
           "flag": "-Wunreachable-code",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
+          "line": 93613,
+          "column": 10,
+          "message": "'return' will never be executed",
+          "flag": "-Wunreachable-code-return",
           "type": "warning"
         },
         {
@@ -1202,10 +1210,26 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 65568,
+          "line": 52393,
+          "column": 5,
+          "message": "code will never be executed",
+          "flag": "-Wunreachable-code",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
+          "line": 67356,
+          "column": 9,
+          "message": "unused variable 'mExpect'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
+          "line": 67352,
           "column": 12,
-          "message": "comparison of integers of different signs: 'int' and 'DWORD' (aka 'unsigned long')",
-          "flag": "-Wsign-compare",
+          "message": "unused function 'walAssertLockmask'",
+          "flag": "-Wunused-function",
           "type": "warning"
         },
         {
@@ -1214,6 +1238,14 @@
           "column": 9,
           "message": "code will never be executed",
           "flag": "-Wunreachable-code",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
+          "line": 65568,
+          "column": 12,
+          "message": "comparison of integers of different signs: 'int' and 'DWORD' (aka 'unsigned long')",
+          "flag": "-Wsign-compare",
           "type": "warning"
         },
         {
@@ -1234,8 +1266,16 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 51560,
-          "column": 5,
+          "line": 47135,
+          "column": 35,
+          "message": "unused variable 'sqlite3_os_type'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
+          "line": 51355,
+          "column": 18,
           "message": "code will never be executed",
           "flag": "-Wunreachable-code",
           "type": "warning"
@@ -1250,47 +1290,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 67352,
-          "column": 12,
-          "message": "unused function 'walAssertLockmask'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 93613,
-          "column": 10,
-          "message": "'return' will never be executed",
-          "flag": "-Wunreachable-code-return",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 67356,
-          "column": 9,
-          "message": "unused variable 'mExpect'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
           "line": 49829,
-          "column": 5,
-          "message": "code will never be executed",
-          "flag": "-Wunreachable-code",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 47135,
-          "column": 35,
-          "message": "unused variable 'sqlite3_os_type'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\third_party\\sqlite3\\src\\sqlite3.c",
-          "line": 52393,
           "column": 5,
           "message": "code will never be executed",
           "flag": "-Wunreachable-code",
@@ -1337,19 +1337,6 @@
         }
       ]
     },
-    "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\common\\locavailable.cpp": {
-      "hash": "6cf803d5d5620c373f8e2b3c951e25f868d89c66",
-      "warnings": [
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\common\\locavailable.cpp",
-          "line": 255,
-          "column": 14,
-          "message": "result of comparison 'ULocAvailableType' < 0 is always false",
-          "flag": "-Wtautological-type-limit-compare",
-          "type": "warning"
-        }
-      ]
-    },
     "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\collationdatabuilder.cpp": {
       "hash": "ddf9463c7ed8411afb8bf867780268f3a9216bc8",
       "warnings": [
@@ -1359,6 +1346,19 @@
           "column": 20,
           "message": "code will never be executed",
           "flag": "-Wunreachable-code",
+          "type": "warning"
+        }
+      ]
+    },
+    "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\common\\locavailable.cpp": {
+      "hash": "6cf803d5d5620c373f8e2b3c951e25f868d89c66",
+      "warnings": [
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\common\\locavailable.cpp",
+          "line": 255,
+          "column": 14,
+          "message": "result of comparison 'ULocAvailableType' < 0 is always false",
+          "flag": "-Wtautological-type-limit-compare",
           "type": "warning"
         }
       ]
@@ -1381,14 +1381,6 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\displayoptions.cpp",
-          "line": 113,
-          "column": 24,
-          "message": "result of comparison 'UDisplayOptionsPluralCategory' >= 0 is always true",
-          "flag": "-Wtautological-type-limit-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\displayoptions.cpp",
           "line": 149,
           "column": 19,
           "message": "result of comparison 'UDisplayOptionsNounClass' >= 0 is always true",
@@ -1400,6 +1392,14 @@
           "line": 79,
           "column": 25,
           "message": "result of comparison 'UDisplayOptionsGrammaticalCase' >= 0 is always true",
+          "flag": "-Wtautological-type-limit-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\displayoptions.cpp",
+          "line": 113,
+          "column": 24,
+          "message": "result of comparison 'UDisplayOptionsPluralCategory' >= 0 is always true",
           "flag": "-Wtautological-type-limit-compare",
           "type": "warning"
         }
@@ -1522,7 +1522,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\ucal.cpp",
-          "line": 555,
+          "line": 533,
           "column": 15,
           "message": "result of comparison 'UCalendarDateFields' < 0 is always false",
           "flag": "-Wtautological-type-limit-compare",
@@ -1531,14 +1531,6 @@
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\ucal.cpp",
           "line": 513,
-          "column": 15,
-          "message": "result of comparison 'UCalendarDateFields' < 0 is always false",
-          "flag": "-Wtautological-type-limit-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\ucal.cpp",
-          "line": 501,
           "column": 15,
           "message": "result of comparison 'UCalendarDateFields' < 0 is always false",
           "flag": "-Wtautological-type-limit-compare",
@@ -1570,7 +1562,15 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\ucal.cpp",
-          "line": 533,
+          "line": 555,
+          "column": 15,
+          "message": "result of comparison 'UCalendarDateFields' < 0 is always false",
+          "flag": "-Wtautological-type-limit-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\ucal.cpp",
+          "line": 501,
           "column": 15,
           "message": "result of comparison 'UCalendarDateFields' < 0 is always false",
           "flag": "-Wtautological-type-limit-compare",
@@ -1604,7 +1604,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\wintzimpl.cpp",
-          "line": 70,
+          "line": 91,
           "column": 35,
           "message": "result of comparison of unsigned expression < 0 is always false",
           "flag": "-Wtautological-unsigned-zero-compare",
@@ -1612,7 +1612,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\intl\\icu\\source\\i18n\\wintzimpl.cpp",
-          "line": 91,
+          "line": 70,
           "column": 35,
           "message": "result of comparison of unsigned expression < 0 is always false",
           "flag": "-Wtautological-unsigned-zero-compare",
@@ -1629,51 +1629,6 @@
           "column": 25,
           "message": "result of comparison of 4 < 2-bit unsigned value is always false",
           "flag": "-Wtautological-value-range-compare",
-          "type": "warning"
-        }
-      ]
-    },
-    "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c": {
-      "hash": "fc472e0ea99366106107a81ee9e88fc25538f2ad",
-      "warnings": [
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
-          "line": 2796,
-          "column": 11,
-          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
-          "flag": "-Wint-in-bool-context",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
-          "line": 3055,
-          "column": 22,
-          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
-          "flag": "-Wint-in-bool-context",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
-          "line": 2968,
-          "column": 11,
-          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
-          "flag": "-Wint-in-bool-context",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
-          "line": 2955,
-          "column": 11,
-          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
-          "flag": "-Wint-in-bool-context",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
-          "line": 2909,
-          "column": 13,
-          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
-          "flag": "-Wint-in-bool-context",
           "type": "warning"
         }
       ]
@@ -1700,6 +1655,51 @@
           "column": 5,
           "message": "unannotated fall-through between switch labels",
           "flag": "-Wimplicit-fallthrough",
+          "type": "warning"
+        }
+      ]
+    },
+    "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c": {
+      "hash": "fc472e0ea99366106107a81ee9e88fc25538f2ad",
+      "warnings": [
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
+          "line": 2968,
+          "column": 11,
+          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
+          "flag": "-Wint-in-bool-context",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
+          "line": 2796,
+          "column": 11,
+          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
+          "flag": "-Wint-in-bool-context",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
+          "line": 3055,
+          "column": 22,
+          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
+          "flag": "-Wint-in-bool-context",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
+          "line": 2909,
+          "column": 13,
+          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
+          "flag": "-Wint-in-bool-context",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\libpixman\\src\\pixman-fast-path.c",
+          "line": 2955,
+          "column": 11,
+          "message": "converting the result of '<<' to a boolean; did you mean '(((format >> (12)) & ((1 << (4)) - 1)) << ((format >> 22) & 3)) != 0'?",
+          "flag": "-Wint-in-bool-context",
           "type": "warning"
         }
       ]
@@ -1761,9 +1761,9 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\d2d1-extra.h",
-          "line": 100,
+          "line": 60,
           "column": 34,
-          "message": "'ID2D1DeviceContext4::DrawTextA' hides overloaded virtual function",
+          "message": "'ID2D1DeviceContext2::DrawGdiMetafile' hides overloaded virtual function",
           "flag": "-Woverloaded-virtual",
           "type": "warning"
         },
@@ -1777,9 +1777,9 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\d2d1-extra.h",
-          "line": 60,
+          "line": 100,
           "column": 34,
-          "message": "'ID2D1DeviceContext2::DrawGdiMetafile' hides overloaded virtual function",
+          "message": "'ID2D1DeviceContext4::DrawTextA' hides overloaded virtual function",
           "flag": "-Woverloaded-virtual",
           "type": "warning"
         }
@@ -1790,7 +1790,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-private.hpp",
-          "line": 92,
+          "line": 146,
           "column": 11,
           "message": "unused variable 'hr'",
           "flag": "-Wunused-variable",
@@ -1798,7 +1798,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-private.hpp",
-          "line": 146,
+          "line": 92,
           "column": 11,
           "message": "unused variable 'hr'",
           "flag": "-Wunused-variable",
@@ -1809,46 +1809,6 @@
     "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp": {
       "hash": "54b836e017a33ebc8dd5ef1f11a42c2cc9d2a74c",
       "warnings": [
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
-          "line": 1692,
-          "column": 18,
-          "message": "unused variable 'y'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
-          "line": 1201,
-          "column": 6,
-          "message": "unannotated fall-through between switch labels",
-          "flag": "-Wimplicit-fallthrough",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
-          "line": 1725,
-          "column": 31,
-          "message": "unused variable 'dwriteff'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
-          "line": 1750,
-          "column": 13,
-          "message": "unused variable 'indices'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
-          "line": 1752,
-          "column": 26,
-          "message": "unused variable 'offsets'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
           "line": 1152,
@@ -1872,6 +1832,46 @@
           "message": "unused variable 'advances'",
           "flag": "-Wunused-variable",
           "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
+          "line": 1725,
+          "column": 31,
+          "message": "unused variable 'dwriteff'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
+          "line": 1752,
+          "column": 26,
+          "message": "unused variable 'offsets'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
+          "line": 1201,
+          "column": 6,
+          "message": "unannotated fall-through between switch labels",
+          "flag": "-Wimplicit-fallthrough",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
+          "line": 1692,
+          "column": 18,
+          "message": "unused variable 'y'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\gfx\\cairo\\cairo\\src\\win32\\cairo-dwrite-font.cpp",
+          "line": 1750,
+          "column": 13,
+          "message": "unused variable 'indices'",
+          "flag": "-Wunused-variable",
+          "type": "warning"
         }
       ]
     },
@@ -1880,7 +1880,7 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\ipc\\chromium\\src\\base\\string_util.cc",
-          "line": 641,
+          "line": 651,
           "column": 18,
           "message": "result of comparison 'long' > 2147483647 is always false",
           "flag": "-Wtautological-type-limit-compare",
@@ -1888,7 +1888,7 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\ipc\\chromium\\src\\base\\string_util.cc",
-          "line": 651,
+          "line": 641,
           "column": 18,
           "message": "result of comparison 'long' > 2147483647 is always false",
           "flag": "-Wtautological-type-limit-compare",
@@ -1909,26 +1909,18 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libcubeb\\src\\cubeb_winmm.c",
-          "line": 830,
-          "column": 12,
-          "message": "unused variable 'r'",
-          "flag": "-Wunused-variable",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libcubeb\\src\\cubeb_winmm.c",
-          "line": 1018,
-          "column": 16,
-          "message": "cast to 'cubeb_devid' (aka 'const void *') from smaller integer type 'UINT' (aka 'unsigned int')",
-          "flag": "-Wint-to-void-pointer-cast",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libcubeb\\src\\cubeb_winmm.c",
           "line": 1064,
           "column": 16,
           "message": "cast to 'cubeb_devid' (aka 'const void *') from smaller integer type 'UINT' (aka 'unsigned int')",
           "flag": "-Wint-to-void-pointer-cast",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libcubeb\\src\\cubeb_winmm.c",
+          "line": 830,
+          "column": 12,
+          "message": "unused variable 'r'",
+          "flag": "-Wunused-variable",
           "type": "warning"
         },
         {
@@ -1942,6 +1934,14 @@
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libcubeb\\src\\cubeb_winmm.c",
           "line": 993,
+          "column": 16,
+          "message": "cast to 'cubeb_devid' (aka 'const void *') from smaller integer type 'UINT' (aka 'unsigned int')",
+          "flag": "-Wint-to-void-pointer-cast",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libcubeb\\src\\cubeb_winmm.c",
+          "line": 1018,
           "column": 16,
           "message": "cast to 'cubeb_devid' (aka 'const void *') from smaller integer type 'UINT' (aka 'unsigned int')",
           "flag": "-Wint-to-void-pointer-cast",
@@ -2040,16 +2040,16 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample.c",
-          "line": 962,
-          "column": 21,
+          "line": 687,
+          "column": 20,
           "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
           "flag": "-Wsign-compare",
           "type": "warning"
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample.c",
-          "line": 687,
-          "column": 20,
+          "line": 1017,
+          "column": 19,
           "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
           "flag": "-Wsign-compare",
           "type": "warning"
@@ -2080,8 +2080,8 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample.c",
-          "line": 1017,
-          "column": 19,
+          "line": 962,
+          "column": 21,
           "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
           "flag": "-Wsign-compare",
           "type": "warning"
@@ -2101,14 +2101,6 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample_sse.c",
-          "line": 112,
-          "column": 12,
-          "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
-          "flag": "-Wsign-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample_sse.c",
           "line": 64,
           "column": 12,
           "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
@@ -2119,6 +2111,14 @@
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample_sse.c",
           "line": 47,
           "column": 14,
+          "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
+          "flag": "-Wsign-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libspeex_resampler\\src\\resample_sse.c",
+          "line": 112,
+          "column": 12,
           "message": "comparison of integers of different signs: 'int' and 'unsigned int'",
           "flag": "-Wsign-compare",
           "type": "warning"
@@ -2138,19 +2138,6 @@
         }
       ]
     },
-    "D:\\LunarFox-source\\LunarFox\\netwerk\\sctp\\src\\user_atomic.h": {
-      "hash": "eb22e6d201310ff2d308f4b6c8eacec49b22b7ab",
-      "warnings": [
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\netwerk\\sctp\\src\\user_atomic.h",
-          "line": 81,
-          "column": 13,
-          "message": "unused function 'atomic_init'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        }
-      ]
-    },
     "D:\\LunarFox-source\\LunarFox\\third_party\\jpeg-xl\\lib\\jxl\\modular\\transform\\palette.h": {
       "hash": "c7d5f0d2f11a621c43641fbc882c282026c347fc",
       "warnings": [
@@ -2159,6 +2146,19 @@
           "line": 48,
           "column": 1,
           "message": "unused function 'GetPaletteValue'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        }
+      ]
+    },
+    "D:\\LunarFox-source\\LunarFox\\netwerk\\sctp\\src\\user_atomic.h": {
+      "hash": "eb22e6d201310ff2d308f4b6c8eacec49b22b7ab",
+      "warnings": [
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\netwerk\\sctp\\src\\user_atomic.h",
+          "line": 81,
+          "column": 13,
+          "message": "unused function 'atomic_init'",
           "flag": "-Wunused-function",
           "type": "warning"
         }
@@ -2372,14 +2372,6 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\toolkit\\components\\protobuf\\src\\google\\protobuf\\stubs\\strutil.cc",
-          "line": 642,
-          "column": 35,
-          "message": "result of comparison 'const long' > 2147483647 is always false",
-          "flag": "-Wtautological-type-limit-compare",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\toolkit\\components\\protobuf\\src\\google\\protobuf\\stubs\\strutil.cc",
           "line": 323,
           "column": 8,
           "message": "possible misuse of comma operator here",
@@ -2399,6 +2391,14 @@
           "line": 639,
           "column": 35,
           "message": "result of comparison 'const long' < -2147483648 is always false",
+          "flag": "-Wtautological-type-limit-compare",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\toolkit\\components\\protobuf\\src\\google\\protobuf\\stubs\\strutil.cc",
+          "line": 642,
+          "column": 35,
+          "message": "result of comparison 'const long' > 2147483647 is always false",
           "flag": "-Wtautological-type-limit-compare",
           "type": "warning"
         }
@@ -2435,17 +2435,9 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\security\\nss\\lib\\freebl\\verified\\karamel\\krmllib\\dist\\minimal\\FStar_UInt_8_16_32_64.h",
-          "line": 135,
+          "line": 95,
           "column": 1,
-          "message": "unused function 'FStar_UInt16_eq_mask'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\security\\nss\\lib\\freebl\\verified\\karamel\\krmllib\\dist\\minimal\\FStar_UInt_8_16_32_64.h",
-          "line": 185,
-          "column": 1,
-          "message": "unused function 'FStar_UInt8_eq_mask'",
+          "message": "unused function 'FStar_UInt32_gte_mask'",
           "flag": "-Wunused-function",
           "type": "warning"
         },
@@ -2459,17 +2451,25 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\security\\nss\\lib\\freebl\\verified\\karamel\\krmllib\\dist\\minimal\\FStar_UInt_8_16_32_64.h",
-          "line": 145,
+          "line": 185,
           "column": 1,
-          "message": "unused function 'FStar_UInt16_gte_mask'",
+          "message": "unused function 'FStar_UInt8_eq_mask'",
           "flag": "-Wunused-function",
           "type": "warning"
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\security\\nss\\lib\\freebl\\verified\\karamel\\krmllib\\dist\\minimal\\FStar_UInt_8_16_32_64.h",
-          "line": 95,
+          "line": 135,
           "column": 1,
-          "message": "unused function 'FStar_UInt32_gte_mask'",
+          "message": "unused function 'FStar_UInt16_eq_mask'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\security\\nss\\lib\\freebl\\verified\\karamel\\krmllib\\dist\\minimal\\FStar_UInt_8_16_32_64.h",
+          "line": 145,
+          "column": 1,
+          "message": "unused function 'FStar_UInt16_gte_mask'",
           "flag": "-Wunused-function",
           "type": "warning"
         },
@@ -2504,16 +2504,16 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\toolkit\\crashreporter\\google-breakpad\\src\\third_party\\libdisasm\\x86_disasm.c",
-          "line": 62,
-          "column": 55,
+          "line": 38,
+          "column": 56,
           "message": "cast to 'void *' from smaller integer type 'long'",
           "flag": "-Wint-to-void-pointer-cast",
           "type": "warning"
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\toolkit\\crashreporter\\google-breakpad\\src\\third_party\\libdisasm\\x86_disasm.c",
-          "line": 38,
-          "column": 56,
+          "line": 62,
+          "column": 55,
           "message": "cast to 'void *' from smaller integer type 'long'",
           "flag": "-Wint-to-void-pointer-cast",
           "type": "warning"
@@ -2523,6 +2523,86 @@
     "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c": {
       "hash": "52f11c9ca329fdfcd00fc57510bfe3cd5618eaa8",
       "warnings": [
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4402,
+          "column": 8,
+          "message": "unused function 'dlindependent_calloc'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4463,
+          "column": 5,
+          "message": "unused function 'dlmallopt'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4420,
+          "column": 7,
+          "message": "unused function 'dlpvalloc'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4413,
+          "column": 7,
+          "message": "unused function 'dlvalloc'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4408,
+          "column": 8,
+          "message": "unused function 'dlindependent_comalloc'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 452,
+          "column": 9,
+          "message": "'WIN32_LEAN_AND_MEAN' macro redefined",
+          "flag": "-Wmacro-redefined",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4440,
+          "column": 8,
+          "message": "unused function 'dlmalloc_max_footprint'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4375,
+          "column": 7,
+          "message": "unused function 'dlrealloc'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4450,
+          "column": 6,
+          "message": "unused function 'dlmalloc_stats'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
+          "line": 4454,
+          "column": 8,
+          "message": "unused function 'dlmalloc_usable_size'",
+          "flag": "-Wunused-function",
+          "type": "warning"
+        },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
           "line": 3385,
@@ -2541,86 +2621,6 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4402,
-          "column": 8,
-          "message": "unused function 'dlindependent_calloc'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4408,
-          "column": 8,
-          "message": "unused function 'dlindependent_comalloc'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4450,
-          "column": 6,
-          "message": "unused function 'dlmalloc_stats'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4413,
-          "column": 7,
-          "message": "unused function 'dlvalloc'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4420,
-          "column": 7,
-          "message": "unused function 'dlpvalloc'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4454,
-          "column": 8,
-          "message": "unused function 'dlmalloc_usable_size'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4375,
-          "column": 7,
-          "message": "unused function 'dlrealloc'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4427,
-          "column": 5,
-          "message": "unused function 'dlmalloc_trim'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 452,
-          "column": 9,
-          "message": "'WIN32_LEAN_AND_MEAN' macro redefined",
-          "flag": "-Wmacro-redefined",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4463,
-          "column": 5,
-          "message": "unused function 'dlmallopt'",
-          "flag": "-Wunused-function",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
           "line": 4436,
           "column": 8,
           "message": "unused function 'dlmalloc_footprint'",
@@ -2629,9 +2629,9 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\js\\src\\ctypes\\libffi\\src\\dlmalloc.c",
-          "line": 4440,
-          "column": 8,
-          "message": "unused function 'dlmalloc_max_footprint'",
+          "line": 4427,
+          "column": 5,
+          "message": "unused function 'dlmalloc_trim'",
           "flag": "-Wunused-function",
           "type": "warning"
         }
@@ -2744,6 +2744,46 @@
       "warnings": [
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 13,
+          "column": 18,
+          "message": "'mozilla::RLBoxSoundTouch::RLBoxSoundTouch' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 36,
+          "column": 18,
+          "message": "'mozilla::RLBoxSoundTouch::~RLBoxSoundTouch' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 71,
+          "column": 23,
+          "message": "'mozilla::RLBoxSoundTouch::numChannels' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 49,
+          "column": 23,
+          "message": "'mozilla::RLBoxSoundTouch::setChannels' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 106,
+          "column": 23,
+          "message": "'mozilla::RLBoxSoundTouch::receiveSamples' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
           "line": 15,
           "column": 23,
           "message": "'mozilla::RLBoxSoundTouch::Init' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
@@ -2760,17 +2800,17 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 63,
-          "column": 23,
-          "message": "'mozilla::RLBoxSoundTouch::setTempo' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "line": 80,
+          "column": 43,
+          "message": "'mozilla::RLBoxSoundTouch::numSamples' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
           "flag": "-Winconsistent-dllimport",
           "type": "warning"
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 13,
-          "column": 18,
-          "message": "'mozilla::RLBoxSoundTouch::RLBoxSoundTouch' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "line": 63,
+          "column": 23,
+          "message": "'mozilla::RLBoxSoundTouch::setTempo' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
           "flag": "-Winconsistent-dllimport",
           "type": "warning"
         },
@@ -2784,65 +2824,9 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 71,
-          "column": 23,
-          "message": "'mozilla::RLBoxSoundTouch::numChannels' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 36,
-          "column": 18,
-          "message": "'mozilla::RLBoxSoundTouch::~RLBoxSoundTouch' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 84,
-          "column": 43,
-          "message": "'mozilla::RLBoxSoundTouch::numUnprocessedSamples' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 151,
-          "column": 23,
-          "message": "'mozilla::RLBoxSoundTouch::flush' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 80,
-          "column": 43,
-          "message": "'mozilla::RLBoxSoundTouch::numSamples' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 49,
-          "column": 23,
-          "message": "'mozilla::RLBoxSoundTouch::setChannels' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
           "line": 67,
           "column": 23,
           "message": "'mozilla::RLBoxSoundTouch::setRate' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
-          "flag": "-Winconsistent-dllimport",
-          "type": "warning"
-        },
-        {
-          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 58,
-          "column": 23,
-          "message": "'mozilla::RLBoxSoundTouch::setSetting' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
           "flag": "-Winconsistent-dllimport",
           "type": "warning"
         },
@@ -2856,6 +2840,14 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 151,
+          "column": 23,
+          "message": "'mozilla::RLBoxSoundTouch::flush' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
           "line": 155,
           "column": 23,
           "message": "'mozilla::RLBoxSoundTouch::resizeSampleBuffer' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
@@ -2864,9 +2856,17 @@
         },
         {
           "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
-          "line": 106,
+          "line": 58,
           "column": 23,
-          "message": "'mozilla::RLBoxSoundTouch::receiveSamples' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "message": "'mozilla::RLBoxSoundTouch::setSetting' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
+          "flag": "-Winconsistent-dllimport",
+          "type": "warning"
+        },
+        {
+          "filename": "D:\\LunarFox-source\\LunarFox\\media\\libsoundtouch\\src\\RLBoxSoundTouch.cpp",
+          "line": 84,
+          "column": 43,
+          "message": "'mozilla::RLBoxSoundTouch::numUnprocessedSamples' redeclared without 'dllimport' attribute: 'dllexport' attribute added",
           "flag": "-Winconsistent-dllimport",
           "type": "warning"
         }
