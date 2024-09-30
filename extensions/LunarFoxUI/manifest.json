@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "LunarFoxUI",
+    "version": "1.0",
+    "description": "Override the default browser and use my custom one.",
+    "permissions": [
+        "storage",
+        "fileSystem",
+        "fileSystem.write",
+        "fileSystem.directory",
+        "fileSystem.file"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "icons": {
+        "48": "icon.png"
+    },
+    "web_accessible_resources": [
+        "chrome/*"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "lunarfoxui@example.com"
+        }
+    }
+}

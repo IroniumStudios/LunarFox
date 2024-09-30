@@ -27,6 +27,7 @@ DIRS += [
 
 DIRS += [
     "app",
+    "profiles",  # Added profiles directory
 ]
 
 if CONFIG["MAKENSISU"]:

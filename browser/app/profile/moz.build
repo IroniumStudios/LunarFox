@@ -1,0 +1,1 @@
+FINAL_TARGET_FILES.defaults += ["app/profile/prefs.js"]

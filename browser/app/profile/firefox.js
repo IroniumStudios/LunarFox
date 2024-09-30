@@ -19,6 +19,19 @@
   #endif
 #endif
 
+//enabled the ability for the default LunarFox Stylesheet to be changed
+pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// Allows the theme's SVG icons to be coloured properly.
+pref("svg.context-properties.content.enabled", true);
+// Allows colours used in the theme to be mixed with others.
+pref("layout.css.color-mix.enabled", true);
+// Allows theme to use different colours for light/dark mode.
+pref("layout.css.light-dark.enabled", true);
+// Enables the CSS :has() selector, required for hide tabs toolbar tweak.
+pref("layout.css.has-selector.enabled", true);
+
+
 pref("browser.hiddenWindowChromeURL", "chrome://browser/content/hiddenWindowMac.xhtml");
 
 // Set add-ons abuse report related prefs specific to Firefox Desktop.

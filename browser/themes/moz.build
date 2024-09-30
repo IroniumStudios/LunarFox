@@ -29,7 +29,8 @@ elif toolkit == "gtk":
 else:
     DIRS += ["windows"]
 
-DIRS += ["addons", "shared/app-marketplace-icons"]
+# Add the chrome theme directory
+DIRS += ["chrome"]
 
 with Files("osx/**"):
     SCHEDULES.exclusive = ["macosx"]
